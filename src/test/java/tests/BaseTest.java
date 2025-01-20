@@ -14,8 +14,11 @@ public class BaseTest {
 		String url = "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login";
 		driver.manage().window().maximize();
 		driver.get(url);
-		driver.quit();
 		
+	}
+	
+	public void teardown() {
+		driver.quit();
 	}
 
 }
